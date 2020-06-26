@@ -49,7 +49,7 @@ kramdown:
 
 # Gitalk
 gitalk:
-  enable: false #是否开启Gitalk评论
+  enable: true #是否开启Gitalk评论
   clientID: 6b62de6b3d5f5dad7f3f #生成的clientID
   clientSecret: 94e97c8da3f1b4d6cbd60da427f52dba7940f67e #生成的clientSecret
   repo: GiantDrawf.github.io #仓库名称
