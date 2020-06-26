@@ -4,7 +4,7 @@ title: 实现一个版本控制脚本
 subtitle: 基于shelljs和inquirer版本控制脚本
 date: 2020-06-11
 author: ZJ
-header-img: img/post-bg-debug.jpg
+header-img: img/post-bg-debug.png
 catalog: true
 tags:
   - npm version
