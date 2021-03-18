@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "About me"
-description: "Hey, this is ZJ."
-header-img: "img/post-bg-rwd.jpg"
+title: 'About me'
+description: 'Hey, this is ZJ.'
+header-img: 'img/post-bg-rwd.jpg'
 ---
 
 <!-- Language Selector -->
@@ -22,10 +22,10 @@ header-img: "img/post-bg-rwd.jpg"
   </blockquote>
 
   <p>
-    Hey，我是<strong>ZJ</strong>，一枚前端开发攻城狮，目前在北京，就职于<a
-      href="https://www.ifeng.com/"
+    Hey，我是<strong>ZJ</strong>，一枚前端开发攻城狮，目前在上海，就职于<a
+      href="https://www.jk.cn/"
       target="_blank"
-      >IFENG</a
+      >平安好医生</a
     >。
   </p>
 
@@ -45,36 +45,36 @@ header-img: "img/post-bg-rwd.jpg"
 <!-- Handle Language Change -->
 <script type="text/javascript">
   // get nodes
-  var $zh = document.querySelector(".zh");
-  var $en = document.querySelector(".en");
-  var $select = document.querySelector("select");
+  var $zh = document.querySelector('.zh');
+  var $en = document.querySelector('.en');
+  var $select = document.querySelector('select');
 
   // bind hashchange event
-  window.addEventListener("hashchange", _render);
+  window.addEventListener('hashchange', _render);
 
   // handle render
   function _render() {
     var _hash = window.location.hash;
     // en
-    if (_hash == "#en") {
+    if (_hash == '#en') {
       $select.selectedIndex = 1;
-      $en.style.display = "block";
-      $zh.style.display = "none";
+      $en.style.display = 'block';
+      $zh.style.display = 'none';
       // zh by default
     } else {
       // not trigger onChange, otherwise cause a loop call.
       $select.selectedIndex = 0;
-      $zh.style.display = "block";
-      $en.style.display = "none";
+      $zh.style.display = 'block';
+      $en.style.display = 'none';
     }
   }
 
   // handle select change
   function onLanChange(index) {
     if (index == 0) {
-      window.location.hash = "#zh";
+      window.location.hash = '#zh';
     } else {
-      window.location.hash = "#en";
+      window.location.hash = '#en';
     }
   }
 
@@ -115,18 +115,18 @@ header-img: "img/post-bg-rwd.jpg"
 <!-- disqus 公共JS代码 start (一个网页只需插入一次) -->
 <script type="text/javascript">
   /* * * CONFIGURATION VARIABLES * * */
-  var disqus_shortname = "{{site.disqus.username}}";
-  var disqus_identifier = "{{site.disqus.username}}/{{page.url}}";
-  var disqus_url = "{{site.url}}{{page.url}}";
+  var disqus_shortname = '{{site.disqus.username}}';
+  var disqus_identifier = '{{site.disqus.username}}/{{page.url}}';
+  var disqus_url = '{{site.url}}{{page.url}}';
 
   (function () {
-    var dsq = document.createElement("script");
-    dsq.type = "text/javascript";
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
     dsq.async = true;
-    dsq.src = "//" + disqus_shortname + ".disqus.com/embed.js";
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
     (
-      document.getElementsByTagName("head")[0] ||
-      document.getElementsByTagName("body")[0]
+      document.getElementsByTagName('head')[0] ||
+      document.getElementsByTagName('body')[0]
     ).appendChild(dsq);
   })();
 </script>
