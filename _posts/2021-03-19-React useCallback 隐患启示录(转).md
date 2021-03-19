@@ -4,7 +4,7 @@ title: React useCallback 隐患启示录
 subtitle: useCallback的一些隐患，以及大家探讨出的一些解决方案
 date: 2021-03-19
 author: ZJ
-header-img: img/post-bg-2015.jpg
+header-img: img/post-bg-2015.jpeg
 catalog: true
 tags:
   - React
