@@ -4,7 +4,7 @@ title: React useCallback 隐患启示录
 subtitle: useCallback的一些隐患，以及大家探讨出的一些解决方案
 date: 2021-03-19
 author: ZJ
-header-img: img/post-bg-rwd.jpg
+header-img: img/post-bg-2015.jpg
 catalog: true
 tags:
   - React
@@ -28,7 +28,8 @@ tags:
 6. 我希望这个 useCallback 包裹但函数，但某个依赖项变化时，引用了我这个函数的所有 useEffect 都得重新执行一下；
 
 我们做了投票，发现场景 4 是使用的最多的
-![投票结果]('img/blogImages/109492640-3ff3fd00-7ac6-11eb-8fcb-fa6524ee8a41.png', '投票结果')
+
+<img src="/img/blogImages/109492640-3ff3fd00-7ac6-11eb-8fcb-fa6524ee8a41.png" />
 
 #### 案例
 
@@ -120,7 +121,7 @@ const MemoArticleTypeSetting = memo(ArticleTypeSetting);
 
 ##### 哪些地方不规范？
 
-![图片]('img/blogImages/109495242-f60d1600-7ac9-11eb-9f07-9be1e7bcce35.png', '图片')
+<img src="/img/blogImages/109495242-f60d1600-7ac9-11eb-9f07-9be1e7bcce35.png" />
 
 这里不规范， useEffect 中使用了 report 函数，但是没有将它放到依赖数组中。我认为这是一件比较危险的事情，在 Hooks 中经常有过期状态的问题。插件已经帮你提示了，虽然现在你自测感觉没问题，但你很难保证在经过几轮轮修改之后，虽然你的代码一堆 warning 或 error，但跑起来没问题。
 
@@ -171,7 +172,8 @@ useEffect(() => {
    而在新写组件的时候，你不知道什么时候会碰到这个问题，因为一旦碰到了你只有使用 forceUpdate 来解决，要改相关状态的定义，每次使用的时候还要把 someSate 改为 ref.someState。
 
 2. 每次想更新视图时都需要 forceUpdate，官网是不推荐这种方式的，[链接点我](https://zh-hans.reactjs.org/docs/hooks-faq.html#is-there-something-like-forceupdate)
-   ![图片]('img/blogImages/109497003-60bf5100-7acc-11eb-9f73-93a2f3ef42ca.png','图片')
+
+<img src="/img/blogImages/109497003-60bf5100-7acc-11eb-9f73-93a2f3ef42ca.png" />
 
 ##### 方式 2：将 函数绑定到 useRef 上来解决
 
