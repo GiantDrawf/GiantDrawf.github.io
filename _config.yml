@@ -3,15 +3,16 @@ title: 倒闭的皮革厂
 SEOTitle: 倒闭的皮革厂 | ZJ Blog
 header-img: img/post-bg-desk.jpg
 email: giantdwarf1995@gmail.com
-description: "Stay foolish. Stay hungry."
-keyword: "ZJ, ZJ Blog, 倒闭的皮革厂, ZJ的博客, React, JavaScript, Flutter"
-url: "https://giantdrawf.github.io/" # your host, for absolute URL
-baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/GiantDrawf/GiantDrawf.github.io" # you code repository
+description: 'Stay foolish. Stay hungry.'
+keyword: 'ZJ, ZJ Blog, 倒闭的皮革厂, ZJ的博客, React, JavaScript, Flutter'
+url: 'https://giantdrawf.github.io/' # your host, for absolute URL
+baseurl: '' # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: 'https://github.com/GiantDrawf/GiantDrawf.github.io' # you code repository
+github_username: 'giantdrawf' # github username
 
 # Sidebar settings
 sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "奥利给!"
+sidebar-about-description: '奥利给!'
 sidebar-avatar: /img/about-ZJ-gentle.jpeg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 # SNS settings
@@ -27,7 +28,7 @@ RSS: false
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 permalink: pretty
 paginate: 10
-exclude: ["less", "node_modules", "Gruntfile.js", "package.json", "README.md"]
+exclude: ['less', 'node_modules', 'Gruntfile.js', 'package.json', 'README.md']
 anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
 
 # Gems
@@ -64,7 +65,7 @@ gitalk:
 ba_track_id: cc1ea0ce15a99b6b20c77fada9bf2faf
 
 # Google Analytics
-ga_track_id: "UA-170962953-1" # Format: UA-xxxxxx-xx
+ga_track_id: 'UA-170962953-1' # Format: UA-xxxxxx-xx
 ga_domain: auto # 默认的是 auto, 这里我是自定义了的域名，你如果没有自己的域名，需要改成auto
 
 # Featured Tags
@@ -72,7 +73,7 @@ featured-tags: true # 是否使用首页标签
 featured-condition-size: 0 # 相同标签数量大于这个数，才会出现在首页
 
 # Progressive Web Apps
-chrome-tab-theme-color: "#000000"
+chrome-tab-theme-color: '#000000'
 service-worker: true
 # Friends
 # friends: []
